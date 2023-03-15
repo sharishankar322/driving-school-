@@ -1,0 +1,15 @@
+.body{
+    background-image: url('https://imgmedia.lbb.in/media/2021/02/6037735ab9ef242e9afd5c6d_1614246746447.jpg');
+    font-size: medium;
+    /* padding: auto; */
+    font-size: 1rem;
+    line-height: 2.15;
+    padding-left: .75em;
+    padding-right: .75em;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.heading-section{
+    font-size: xx-large;
+}

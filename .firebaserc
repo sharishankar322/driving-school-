@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "mini-project-40f11": {
+      "hosting": {
+        "one": [
+          "mini-project-40f11"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "mini-project-40f11"
+  }
+}
