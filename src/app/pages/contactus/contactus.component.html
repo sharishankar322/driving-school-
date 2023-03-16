@@ -22,33 +22,27 @@
                     <div class="row">
                       <div class="col-md-6">
                         <div class="form-group">
-                          <label class="label" for="name">Full Name</label>
-                          <input type="text" [] class="form-control" name="name" id="name" placeholder="Name">
+                          <label class="label" for="name">Name</label>
+                          <input type="text" [(ngModel)]="name" class="form-control" name="name" id="name" placeholder="Enter Your Name">
                         </div>
                       </div>
                       <div class="col-md-6"> 
                         <div class="form-group">
                           <label class="label" for="email">Email Address</label>
-                          <input type="email" class="form-control" name="email" id="email" placeholder="Email">
+                          <input type="email" [(ngModel)]="email" class="form-control" name="email" id="email" placeholder="Enter Your Email">
                         </div>
                       </div>
-                      <div class="col-md-12">
-                        <div class="form-group">
-                          <label class="label" for="subject">Subject</label>
-                          <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject">
-                        </div>
-                      </div>
+                      
                       <div class="col-md-12">
                         <div class="form-group">
                           <label class="label" for="#">Message</label>
-                          <textarea name="message" class="form-control" id="message" cols="30" rows="4" placeholder="Message"></textarea>
+                          <textarea name="message" [(ngModel)]="msg" class="form-control" id="message" cols="30" rows="4" placeholder="Enter Your Message"></textarea>
                         </div>
                       </div>
                       <div class="col-md-12">
                         <div class="form-group">
                           <br>
-                          <input type="submit" value="Send Message" class="btn btn-primary">
-                          <div class="submitting"></div>
+                          <button class="btn btn-danger" (click)="contactus()">Send</button>
                         </div>
                       </div>
                     </div>
@@ -63,7 +57,7 @@
                 </div>
               </div>
             </div>
-            <div class="row">
+            <!-- <div class="row">
               <div class="col-md-3">
                 <div class="dbox w-100 text-center">
                   <div class="icon d-flex align-items-center justify-content-center">
@@ -109,5 +103,5 @@
         </div>
       </div>
     </div>
-    </section>
+    </section> -->
     

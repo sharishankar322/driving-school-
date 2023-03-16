@@ -60,4 +60,35 @@ export class FireService {
     })
   }
 
+  contactus1(details: any) {
+    const contactsCollection = collection(this.fires, 'contacts');
+    addDoc(contactsCollection, details)
+      .then(() => {
+        // console.log('Contact information added successfully');
+         alert('Contact information added successfully');
+       
+      })
+      .catch((error) => {
+        // console.error('Error adding Query : ', error);
+         alert('Error adding contact information');
+       
+      });
+  }
+  
+
+  address(Adddetails:any)
+  {
+    const addressColllection = collection(this.fires, 'address');
+    addDoc(addressColllection,Adddetails).then(() => {
+      // console.log('Contact information added successfully');
+       alert('address information added successfully');
+      
+    })
+    .catch((error) => {
+      // console.error('Error adding Query : ', error);
+       alert('Error adding address information');
+      
+    });
+
+  }
 }
