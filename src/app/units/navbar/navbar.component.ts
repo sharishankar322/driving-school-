@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { AngularFireAuth } from '@angular/fire/compat/auth';
+import { FireService } from 'src/app/fire.service';
 
 @Component({
   selector: 'app-navbar',
@@ -6,5 +8,9 @@ import { Component } from '@angular/core';
   styleUrls: ['./navbar.component.css']
 })
 export class NavbarComponent {
-
+  constructor(private fs:FireService,public afa:AngularFireAuth){}
+  signout()
+  {
+    this.fs.signout1()
+  }
 }

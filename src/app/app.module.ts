@@ -11,7 +11,7 @@ import { ServicesComponent } from './pages/services/services.component';
 
 import { ContactusComponent } from './pages/contactus/contactus.component';
 import { LoginComponent } from './pages/login/login.component';
-import { RegisterComponent } from './pages/register/register.component';
+
 import { GalleryComponent } from './pages/gallery/gallery.component';
 import { SingleComponent } from './pages/single/single.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
@@ -22,9 +22,10 @@ import { environment } from '../environments/environment';
 import { provideAuth,getAuth } from '@angular/fire/auth';
 import { provideDatabase,getDatabase } from '@angular/fire/database';
 import { provideFirestore,getFirestore } from '@angular/fire/firestore';
-import { FormsModule } from '@angular/forms';
+import { FormsModule,ReactiveFormsModule } from '@angular/forms';
 import { AngularFireModule } from '@angular/fire/compat';
 import { DashboardComponent } from './pages/dashboard/dashboard.component';
+
 
 
 @NgModule({
@@ -40,11 +41,12 @@ import { DashboardComponent } from './pages/dashboard/dashboard.component';
     
     ContactusComponent,
     LoginComponent,
-    RegisterComponent,
+    
     GalleryComponent,
     SingleComponent,
     ReviewComponent,
     DashboardComponent,
+    
     
 
    

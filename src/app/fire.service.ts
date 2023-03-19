@@ -91,4 +91,37 @@ export class FireService {
     });
 
   }
+
+  
+  slot(details: any) {
+    const contactsCollection = collection(this.fires, 'slot');
+    addDoc(contactsCollection, details)
+      .then(() => {
+        // console.log('Contact information added successfully');
+         alert('Booked  successfully');
+       
+      })
+      .catch((error) => {
+        // console.error('Error adding Query : ', error);
+         alert('Error Occurs');
+       
+      });
+  }
+  
+
+  slot1(Adddetails:any)
+  {
+    const addressColllection = collection(this.fires, 'slot1');
+    addDoc(addressColllection,Adddetails).then(() => {
+      // console.log('Contact information added successfully');
+       alert(' Booked successfully');
+      
+    })
+    .catch((error) => {
+      // console.error('Error adding Query : ', error);
+       alert('Error adding address information');
+      
+    });
+
+  }
 }
